@@ -87,5 +87,6 @@
     <Build Include="dbo\Stored Procedures\uspGetConfig.sql" />
     <Build Include="dbo\Stored Procedures\usp_Getdata.sql" />
     <Build Include="dbo\Stored Procedures\uspGetConfig1.sql" />
+    <Build Include="dbo\Tables\TableDacpacInCheck.sql" />
   </ItemGroup>
 </Project>
