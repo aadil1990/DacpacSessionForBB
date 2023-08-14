@@ -1,4 +1,4 @@
-ALTER PROCEDURE [dbo].[_prGatePassUpdate]
+CREATE PROCEDURE [dbo].[_prGatePassUpdate]
 (
  @GatePass BIGINT,
  @Employee bigint
@@ -38,7 +38,7 @@ GO
 
 
 GO
-ALTER TABLE [dbo].[OrganizationLocation]
+create TABLE [dbo].[OrganizationLocation]
 ADD Latitude NVARCHAR(50) NULL,
 Longitude NVARCHAR(50) NULL
 
@@ -50,7 +50,7 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-ALTER proc [dbo].[_prOrganizationLocationInsert]
+create proc [dbo].[_prOrganizationLocationInsert]
 
 @Location nvarchar (500),
 @AddressLine1 nvarchar (500),
@@ -277,7 +277,7 @@ SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-ALTER proc [dbo].[prOrganizationLocationInsert]
+create proc [dbo].[prOrganizationLocationInsert]
 
 @Location nvarchar (500),
 @AddressLine1 nvarchar (500),
@@ -356,7 +356,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 
-ALTER Proc [dbo].[prOrganizationLocationFetch] --58
+create Proc [dbo].[prOrganizationLocationFetch] --58
 (
    @OrganizationLocation   bigint
 )
@@ -406,7 +406,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 
 
-ALTER Proc [dbo].[prOrganizationLocationFetchAll]
+create Proc [dbo].[prOrganizationLocationFetchAll]
 
  as
  begin
@@ -456,7 +456,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 /****** Object: StoredProcedure [dbo].[Announcements] Script Date: 09/28/2013 10:41:32 ******/
 
-ALTER PROC  [dbo].[_prGatePassFetchByApprover]-- 20287
+create PROC  [dbo].[_prGatePassFetchByApprover]-- 20287
 (
 @Approver bigint
 )
@@ -507,7 +507,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-ALTER PROCEDURE [dbo].[prDocumentAssignmentFetchHeaderNotificationCount]-- 20474,'Weekly'
+create PROCEDURE [dbo].[prDocumentAssignmentFetchHeaderNotificationCount]-- 20474,'Weekly'
 (
     @Employee bigint,
     @TimeSheetType Nvarchar(100)
@@ -665,7 +665,7 @@ GO
 -- Create date: <Create Date,,>
 -- Description:	<Description,,>
 -- ============================================= drop _prCafeProductsAndCategorieInsert  
-ALTER PROCEDURE [dbo].[_prGatePassUpdateStatus] --'1,2' , 'Approved', 'test'
+create PROCEDURE [dbo].[_prGatePassUpdateStatus] --'1,2' , 'Approved', 'test'
       @Gatepass Nvarchar(Max)
 	,@Status NVARCHAR(50)
 	,@ReasonOfRejection NVARCHAR(MAX)
@@ -691,7 +691,7 @@ SET QUOTED_IDENTIFIER ON
 GO
 /****** Object: StoredProcedure [dbo].[Announcements] Script Date: 09/28/2013 10:41:32 ******/
 
-ALTER PROC  [dbo].[_prGatePassFetchByApprover] --10197
+create PROC  [dbo].[_prGatePassFetchByApprover] --10197
 (
 @Approver bigint
 )
